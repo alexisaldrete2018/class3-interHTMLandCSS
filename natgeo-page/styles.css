@@ -1,0 +1,470 @@
+/* VARIABLES */
+
+:root {
+    --bg-color: white;
+}
+
+/* ANIMATIONS */
+@keyframes slideInToTop {
+    from {background-color: white;}
+    to {background-color: #FFCC00;}
+}
+
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 4%;
+    background-color: white;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.nav-item{
+    flex-basis: 100%;
+    height: 100%;
+}
+
+#hamburguer{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+#logo-container{
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+#natgeo-logo{
+    height: 60%;
+}
+
+#navbar-buttons-container{
+    display: flex;
+}
+
+.navbar-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+#login-button{
+    border: none;
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size:medium;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+#search-button{
+    border: none;
+    background-color: white;
+}
+
+#renew-button{
+    border: none;
+    background-color: var(--bg-color);
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    border-bottom: #FFCC00 solid 2px;
+    font-weight: 300;
+}
+
+#renew-button:hover{
+    animation-name:slideInToTop;
+    animation-duration: 1s;
+}
+
+#subscribe-button{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 1px white solid;
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+#subscribe-button:hover{
+    background-color: #FFCC00;
+}
+
+#menu-button{
+    border: none;
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size:medium;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+header{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+hr{
+    width: 70px;
+    border: none;
+    border-top: 4px solid #FFCC00;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 0 27% 20% 27%;
+    box-sizing: border-box;
+}
+
+.news-dashboard-container{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    grid-gap: 35px;
+  }
+
+  #todays-pics-container {
+    grid-column: 1 / 2;
+    grid-row: 1/5;
+  }
+
+  #first-artice-container {
+    background-image: url("images/bear.jpeg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+  }
+
+  #first-article-text-container{
+    width: 100%;
+    height: 45%;
+    color: white;
+    padding-left: 5%;
+    box-sizing: border-box;
+  }
+
+  #first-article-text-container h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size:1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+
+  #first-article-text-container h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size:2rem;
+    font-weight: 600;
+  }
+
+
+.read-button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size:0.9rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+
+  #second-article-container {
+    background-image: url("images/summer-of-soul.webp");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    grid-column: 2/3;
+    grid-row: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    overflow: hidden;
+    
+  }
+
+#second-article-text-container{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#third-article-text-container{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#second-article-text-container h3, #third-article-container h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size:0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+
+  #second-article-text-container h4, #third-article-container h4{
+    font-family: 'Work Sans', sans-serif;
+    font-size:0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+
+#second-article-text-container h1, #third-article-container h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size:1.5rem;
+    font-weight: 600;
+  }
+
+  #second-article-text-container button, #third-article-container button
+   {
+      color: black;
+  }
+
+  #third-article-container {
+    grid-column: 3/5;
+    grid-row: 3 / 5;
+    background-image: url("images/dancing.webp");
+    background-size:100% 70%;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+  }
+
+  #third-article-text-container{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+  #todays-pics-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .title-container h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size:4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+
+  .title-container h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size:1.2rem;
+    font-weight: 300;
+  }
+
+  #subscribe-button-2{
+    background-color: black;
+    border: none;
+    border-bottom: #FFCC00 2px solid;
+    font-family: 'Work Sans', sans-serif;
+    font-size:1.2rem;
+    font-weight: 300;
+    color: white;
+  }
+
+  #subscribe-button-2:hover{
+      background-color: #FFCC00;
+  }
+
+
+  #todays-pics-title-container{
+      color: white;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding-top: 5%;
+  }
+
+  #todays-pics-title-container h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size:2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding-left: 3%;
+    border-left: #FFCC00 5px solid;
+  }
+
+  .todays-pics-item-container{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .todays-pics-img-container{
+      width: 33.33%;
+      height: 100%;
+      padding: 3%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .todays-pics-description-container{
+      width: 66.66%;
+      height: 100%;
+      padding: 3%;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      color: white;
+  }
+
+  #see-more-button-container{
+      display: flex;
+      align-items: center;
+  }
+
+  #see-more-button{
+    border: none;
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    color: white;
+    text-align: left;
+    border-bottom: #FFCC00 solid 2px;
+    font-weight: 400;
+    height: 1.3rem;
+  }
+
+  .todays-pics-description-container h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size:1rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+  }
+
+  .todays-pics-description-container h4{
+    padding-top: 2%;
+    font-family: 'Work Sans', sans-serif;
+    font-size:0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+  }
+
+  #dolphin-img{
+      width: 100%;
+  }
+
+  @media only screen and (max-width: 1500px){
+    main{
+        padding: 0 10% 10%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .mobile-dissappear{
+        display: none;
+    }
+
+    .title-container h1{
+        font-size:2rem;
+    }
+
+    .title-container h3, #subscribe-button-2{
+        font-size:1rem;
+    }
+
+    main{
+        padding: 0 2% 5%;
+    }
+
+    #first-artice-container{
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+    }
+
+    #first-article-text-container{
+        height: 65%;
+    }
+
+    #first-article-text-container h1{
+        font-size:1.6rem;
+    }
+
+    .read-button{
+        font-size:0.7rem;
+    }
+
+    #second-article-container{
+        grid-column: 1 / 5;
+        grid-row: 3 / 5;
+    }
+
+    #third-article-container{
+        grid-column: 1 / 5;
+        grid-row: 5 / 7;
+    }
+
+    #second-article-text-container h3, #third-article-container h3{
+        font-size:0.7rem;
+    }
+    
+    #second-article-text-container h4, #third-article-container h4{
+        font-size:0.9rem;
+    }
+    
+    #second-article-text-container h1, #third-article-container h1{
+        font-size:1.2rem;
+    }
+    
+    #second-article-text-container button, #third-article-container button{
+        color: black;
+    }
+
+    #todays-pics-container{
+        display: none;
+        /* grid-column: 1 / 5;
+        grid-row: 7/9; */
+    }
+}
+
+
+

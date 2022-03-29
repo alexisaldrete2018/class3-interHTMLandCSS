@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/7708537dcb.js" crossorigin="anonymous"></script>
+
+    <title>National Geographic</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div id="logo-container" class="nav-item">
+                <img id="natgeo-logo" src="images/natgeo-logo.png" alt="natgeo-logo" >
+            </div>
+            <div class="nav-item"></div>
+            <div class="nav-item"></div>
+
+            <div id="navbar-buttons-container" class="nav-item">
+                <div class="navbar-button-container">
+                    <button id="login-button" type="button" onclick="">LOGIN</button>
+                </div>
+                <div class="navbar-button-container mobile-dissappear">
+                    <button id="search-button" type="button" onclick=""><i class="fa-solid fa-magnifying-glass fa-xl"></i></i></button>
+                </div>
+                <div class="navbar-button-container mobile-dissappear">
+                    <button id="renew-button" type="button" onclick="">Renew</button>
+                </div>
+                <div class="navbar-button-container">
+                    <button id="subscribe-button" type="button" onclick="">SUBSCRIBE</button>
+                </div>
+                <div class="navbar-button-container mobile-dissappear">
+                    <button id="menu-button" type="button" onclick="">MENU <i class="fa-solid fa-angles-down fa-xs"></i></button></i>
+                </div>
+                <button class="hamburguer mobile-appear" id="hamburguer">
+                    <i class="fa-solid fa-angles-down"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="title-container">
+            <h1>LATEST STORIES</h1>
+            <br>
+            <h3><button id="subscribe-button-2" type="button" onclick="">Subscribe</button> for full access to read stories from National Geographic.</h3>
+            <br>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <div class="news-dashboard-container">
+            <div class="wrapper">
+
+                <div id="first-artice-container">
+                    <div id="first-article-text-container">
+                        <h3>ANIMALS</h3>
+                        <br>
+                        <h1>Inside the heroic effort to rescue Masha the bear from Ukraine</h1>
+                        <br>
+                        <button class="read-button" type="button" onclick=""><i class="fa-solid fa-bars"></i> READ</button>
+                    </div>
+                </div>
+                <div id="second-article-container">
+                    <div id="second-article-text-container">
+                        <h3>HISTORY & CULTURE</h3>
+                        <h4>RACE IN AMERICA</h4>
+                        <br>
+                        <h1>A Q&A  with Questlove on the power of the "Summer of Soul".</h1>
+                        <br>
+                        <button class="read-button" type="button" onclick=""><i class="fa-solid fa-bars"></i> READ</button>
+                    </div>
+                </div>
+                <div id="third-article-container">
+                    <div id="third-article-text-container">
+                        <h3>SCIENCE</h3>
+                        <h4>COVID COVERAGE</h4>
+                        <br>
+                        <h1>If no one else is wearing a mask, should you?</h1>
+                        <br>
+                        <button class="read-button" type="button" onclick=""><i class="fa-solid fa-bars"></i> READ</button>
+                    </div>
+                </div>
+                
+                <div id="todays-pics-container">
+                    <div id="todays-pics-title-container" class="todays-pics-item-container">
+                        <br>
+                        <h1>TODAY'S PICKS</h1>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/dolphin.jpeg" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>ANIMALS</h3>
+                            <h4>Wild dolphin observed 'talking' with harbor porpoises</h4>
+                        </div>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/grains.avif" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>ENVIRONMENT</h3>
+                            <h4>War in Ukraine could plunge world into food shortages</h4>
+                        </div>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/snake.jpeg" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>ANIMALS</h3>
+                            <h4>Controversial study says snakes can recognize themselves</h4>
+                        </div>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/forest.jpeg" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>ENVIRONMENT</h3>
+                            <h4>Is clear-cutting U.S. forests good for wildlife?</h4>
+                        </div>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/train.jpeg" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>TRAVEL</h3>
+                            <h4>One of the most scenic railways in the world spans Iran</h4>
+                        </div>
+                    </div>
+                    <div class="todays-pics-item-container">
+                        <div class="todays-pics-img-container">
+                            <img id="dolphin-img" src="images/sea.jpeg" alt="dolphin-img" >
+                        </div>
+                        <div class="todays-pics-description-container">
+                            <h3>TRAVEL</h3>
+                            <h4>Explore the Oregon Coast—but don’t touch the ‘dragon toes’</h4>
+                        </div>
+                    </div>
+                    <div id="see-more-button-container" class="todays-pics-item-container">
+                        <button id="see-more-button" type="button" onclick="">SEE MORE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
